@@ -38,12 +38,12 @@ int main (){
     if(opt1 == 1 && opt2 == 2){
         printf("Enter Amount in USD: ");
         scanf("%d", &amt);
-        printf("Amount in INR: %.2f\n", amt * 89.36);
+        printf("Amount in INR: %.2f\n", amt * 89.73);
     }
     else if(opt1 == 2 && opt2 == 1){
         printf("Enter Amount in INR: ");
         scanf("%d", &amt);
-        printf("Amount in USD: %.2f\n", amt / 89.36);
+        printf("Amount in USD: %.2f\n", amt / 89.73);
     }
     else if(opt1 == 3 && opt2 == 2){
         printf("Enter Amount in EUR: ");
@@ -110,3 +110,4 @@ int main (){
 
     return 0;
 }
+
