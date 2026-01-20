@@ -16,7 +16,7 @@ int main () {
 		int array[i+1];
 		arr[i] = rand() % 10;
 
-		printf("%d  ", arr[i]);
+		printf("\t%d  ", arr[i]);
 
 		Sleep(400);
 		system("cls");
@@ -37,7 +37,7 @@ int main () {
                 printf("%d ", arr[m]);
             }
             printf("\n");
-            printf("Score: %d\n", score);
+            printf("\tScore: %d\n", score);
 			printf("\nDo you want to play again? (y/n): ");
 			scanf(" %c", &choice);
 			if (choice == 'y' || choice == 'Y') {
@@ -60,5 +60,4 @@ int main () {
 	}
 
 	return 0;
-
 }
