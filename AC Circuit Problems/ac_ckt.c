@@ -140,6 +140,7 @@ int main (){
         else if((z4<79.10 || z4>79.20) && (i4<2.70 || i4>2.80)){
             printf("\nWrong Impedance and Current! \n\n");
         }
+        
     } while ((z4<79.10 || z4>79.20) || (i4<2.70 || i4>2.80));
     
     printf("\nCORRECT !!\n Well Done !!!\n\n");    
