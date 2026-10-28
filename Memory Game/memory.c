@@ -4,16 +4,18 @@
 #include <windows.h>
 
 int main () {
-	int score=0,x=0;
 	char choice;
-	system("cls");
 	srand(time(NULL));
 
-	int n = 1000;
-	int arr[n];
+	do {
+		int score=0,x=0;
+		system("cls");
 
-	for (int i = 0; i < n; i++) {
-		int array[i+1];
+		int n = 1000;
+		int arr[n];
+
+		for (int i = 0; i < n; i++) {
+			int array[i+1];
 		arr[i] = rand() % 10;
 
 		printf("\t%d  ", arr[i]);
@@ -40,16 +42,13 @@ int main () {
             printf("\tScore: %d\n", score);
 			printf("\nDo you want to play again? (y/n): ");
 			scanf(" %c", &choice);
-			if (choice == 'y' || choice == 'Y') {
-				main();
-			}
-			else if (choice == 'n' || choice == 'N') {
+			if (choice == 'n' || choice == 'N') {
 				printf("Thank you for playing!\n");
 			}
-			else {
+			else if (choice != 'y' && choice != 'Y') {
 				printf("Invalid choice! Exiting the game.\n");
 			}
-			return 0;
+			break;
 		}
 		else {
 			printf("Correct !!");
@@ -58,6 +57,7 @@ int main () {
 			system("cls");
 		}
 	}
+	} while (choice == 'y' || choice == 'Y');
 
 	return 0;
 }
